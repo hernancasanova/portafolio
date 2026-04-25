@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #94a3b8;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      max-width: 600px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      color: #94a3b8;
+      max-width: 500px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    .about p {
+      max-width: 600px;
+      color: #94a3b8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hernán Casanova | Desarrollador Full stack</h1>
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#about">Sobre mí</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Construyo aplicaciones web <span>rápidas, escalables</span> y modernas.</h2>
+    <p>Soy desarrollador full stack especializado en crear experiencias digitales eficientes usando tecnologías modernas.</p>
+    <a href="#contact" class="btn">Contáctame</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h3>🚀 Skills</h3>
+  <div class="skills">
+    <div class="card">Frontend: Angular, React, Vue, Redux, Vuex</div>
+    <div class="card">Backend: Java, Php, Node.js, Python</div>
+    <div class="card">Bases de datos: PostgreSQL, Oracle, MongoDB</div>
+    <div class="card">Arquitectura: APIs REST, Microservicios</div>
+    <div class="card">DevOps: Docker, CI/CD</div>
+    <div class="card">Cloud: AWS (EC2, ECR, S3 y RDS)</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>💼 Proyectos personales</h3>
+  <div class="projects">
+    <div class="card">
+      <h4>Plataforma de gestión predial</h4>
+      <p>Poderosa plataforma web para el sector ganadero, enfocada en la gestión de cada recurso estratégico que el usuario posea en su predio. Permite gestionar bovinos, identificadores, documentos, negocios, veterinaria, infraestructura, entre otras, de manera eficiente e intuitiva y enfoquese en el trabajo que realmente importa en su predio.</p>
+        <a style="text-decoration:none; color: gold;" href="https://plataformagestionpredial.cl">www.plataformagestionpredial.cl</a>
+        <p>Arquitectura</p>
+        <img src="./pgp-arquitectura.png" alt="" srcset="" width="100%" height="450px">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h3>👨‍💻 Sobre mí</h3>
+  <p>
+    Soy desarrollador full stack con experiencia en la construcción de aplicaciones web
+  modernas y escalables. Trabajo tanto en frontend como en backend utilizando tecnologías
+  como Angular, React y Vue, junto con Java, Node.js, PHP y Python.
+
+  He desarrollado APIs REST y soluciones basadas en arquitectura de microservicios,
+  integrando bases de datos relacionales y NoSQL como PostgreSQL, Oracle y MongoDB.
+
+  Además, cuento con experiencia en despliegue y gestión de aplicaciones en AWS
+  (EC2, ECR, S3, RDS), así como en la implementación de pipelines de integración y
+  despliegue continuo (CI/CD) utilizando Docker.
+
+  Me enfoco en escribir código limpio, construir sistemas eficientes y seguir
+  buenas prácticas de desarrollo para crear soluciones robustas y mantenibles.
+  </p>
+</section>
+
+<section id="contact">
+  <h3>📩 Contacto</h3>
+  <p>¿Tienes un proyecto en mente? Hablemos.</p>
+  <a href="mailto:hernanrodrigocasanovasilva@gmail.com" class="btn">Enviar email</a>
+</section>
+
+<footer>
+  <p>© 2026 Hernán Rodrigo Casanova Silva - Full Stack Developer</p>
+</footer>
+
+<script>
+  // Scroll suave
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
