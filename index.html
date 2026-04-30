@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portafolio Hernán Casanova</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -102,6 +103,16 @@
       transition: 0.3s;
     }
 
+    .skills .card i {
+      font-size: 20px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .skills .card {
+      line-height: 1.8;
+    }
+
     .card:hover {
       transform: translateY(-5px);
       background: #334155;
@@ -134,7 +145,7 @@
 <section class="hero">
   <div>
     <h2>Construyo aplicaciones web <span>rápidas, escalables</span> y modernas.</h2>
-    <p>Desarrollador full stack con enfoque en backend en Java y arquitecturas de microservicios, desplegadas en AWS y soportadas por CI/CD. Experiencia en desarrollo frontend e integración de interfaces con APIs, construyendo soluciones completas de extremo a extremo.</p>
+    <p>Desarrollador full stack con experiencia en Java, microservicios, AWS, CI/CD y desarrollo frontend para soluciones end-to-end.</p>
     <a href="#contact" class="btn">Contáctame</a>
   </div>
 </section>
@@ -142,35 +153,49 @@
 <section id="skills">
   <h3>🚀 Skills</h3>
   <div class="skills">
+
     <div class="card">
       🎨 Frontend:<br>
-      ⚛️ React · 🅰️ Angular · 🟢 Vue · 🔄 Redux · 🔁 Vuex
+      <i class="devicon-react-original colored"></i> React
+      <i class="devicon-angularjs-plain colored"></i> Angular
+      <i class="devicon-vuejs-plain colored"></i> Vue
+      <i class="devicon-redux-original colored"></i> Redux
+      <i class="devicon-vuejs-plain"></i> Vuex
     </div>
 
     <div class="card">
       ⚙️ Backend:<br>
-      ☕ Java · 🐘 PHP · 🟩 Node.js · 🐍 Python
+      <i class="devicon-java-plain colored"></i> Java
+      <i class="devicon-php-plain colored"></i> PHP
+      <i class="devicon-nodejs-plain colored"></i> Node.js
+      <i class="devicon-python-plain colored"></i> Python
     </div>
 
     <div class="card">
       🗄️ Bases de datos:<br>
-      🐘 PostgreSQL · 🟥 Oracle · 🍃 MongoDB
+      <i class="devicon-postgresql-plain colored"></i> PostgreSQL
+      <i class="devicon-oracle-original colored"></i> Oracle
+      <i class="devicon-mongodb-plain colored"></i> MongoDB
     </div>
 
     <div class="card">
       🏗️ Arquitectura:<br>
-      🔗 APIs REST · 🧩 Microservicios
+      🔗 APIs REST
+      🧩 Microservicios
     </div>
 
     <div class="card">
       🚀 DevOps:<br>
-      🐳 Docker · 🔄 CI/CD
+      <i class="devicon-docker-plain colored"></i> Docker
+      <i class="devicon-githubactions-plain colored"></i> CI/CD
     </div>
 
     <div class="card">
       ☁️ Cloud:<br>
-      🟧 AWS (🖥️ EC2 · 📦 ECR · 🪣 S3 · 🗄️ RDS)
+      <i class="devicon-amazonwebservices-original colored"></i> AWS
+      (EC2 · ECR · S3 · RDS)
     </div>
+
   </div>
 </section>
 
